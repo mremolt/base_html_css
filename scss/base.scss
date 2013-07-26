@@ -66,6 +66,13 @@ $row-margin-bottom: 20px !default;
   .offset-eleven { margin-left: flex-grid(11) + flex-gutter() !important; }
 }
 
+.visible-phone { display: none; }
+.visible-tablet { display: none; }
+.visible-desktop { display: block; }
+.hidden-phone { display: block; }
+.hidden-tablet { display: block; }
+.hidden-desktop { display: none; }
+
 
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -85,6 +92,12 @@ $row-margin-bottom: 20px !default;
     width: 100%;
   }
 
+  .visible-phone { display: none; }
+  .visible-tablet { display: block; }
+  .visible-desktop { display: none; }
+  .hidden-phone { display: block; }
+  .hidden-tablet { display: none; }
+  .hidden-desktop { display: block; }
 }
 
 /* Landscape phone to portrait tablet */
@@ -116,6 +129,13 @@ $row-margin-bottom: 20px !default;
     .eleven { width: flex-grid(12); }
     .twelve { width: flex-grid(12); }
   }
+
+  .visible-phone { display: block; }
+  .visible-tablet { display: none; }
+  .visible-desktop { display: none; }
+  .hidden-phone { display: none; }
+  .hidden-tablet { display: block; }
+  .hidden-desktop { display: block; }
 }
 
 /* Landscape phones and down */
@@ -148,6 +168,12 @@ $row-margin-bottom: 20px !default;
     .twelve { width: flex-grid(12); }
   }
 
+  .visible-phone { display: block; }
+  .visible-tablet { display: none; }
+  .visible-desktop { display: none; }
+  .hidden-phone { display: none; }
+  .hidden-tablet { display: block; }
+  .hidden-desktop { display: block; }
 }
 
 /* framework end */

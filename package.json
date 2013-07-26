@@ -1,0 +1,21 @@
+{
+  "name": "base_html_css",
+  "version": "0.0.0",
+  "description": "base_html_css =============",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mremolt/base_html_css.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "fef2bbc17b103c5d1c08b04e7975715d258be623",
+  "dependencies": {
+    "express": "~3.3.4"
+  }
+}

@@ -1,0 +1,48 @@
+// variables
+$row-margin-bottom: 10px;
+
+@import 'base';
+
+
+// own css
+
+body {
+  font-family: $georgia;
+}
+
+#{$all-text-inputs} {
+  border: 1px solid green;
+}
+
+#{$all-text-inputs-focus} { // Target the :focus pseudo-class
+  @include transition (all 0.5s ease-in-out);
+  background: white;
+  border: 2px solid green;
+}
+
+// grid überschreiben
+.row {
+  .column, .columns {
+    background-color: lighten(#ff0000, 40%);
+
+    .columns {
+      background-color: lighten(#00ff00, 40%);
+    }
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

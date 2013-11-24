@@ -38,32 +38,33 @@ $row-margin-bottom: 20px !default;
     &:first-child {
       margin-left: 0px;
     }
+
+    &.one    { width: flex-grid(1); }
+    &.two    { width: flex-grid(2); }
+    &.three  { width: flex-grid(3); }
+    &.four   { width: flex-grid(4); }
+    &.five   { width: flex-grid(5); }
+    &.six    { width: flex-grid(6); }
+    &.seven  { width: flex-grid(7); }
+    &.eight  { width: flex-grid(8); }
+    &.nine   { width: flex-grid(9); }
+    &.ten    { width: flex-grid(10); }
+    &.eleven { width: flex-grid(11); }
+    &.twelve { width: flex-grid(12); }
+
+    &.offset-one    { margin-left: flex-grid(1) + flex-gutter(); }
+    &.offset-two    { margin-left: flex-grid(2) + flex-gutter(); }
+    &.offset-three  { margin-left: flex-grid(3) + flex-gutter(); }
+    &.offset-four   { margin-left: flex-grid(4) + flex-gutter(); }
+    &.offset-five   { margin-left: flex-grid(5) + flex-gutter(); }
+    &.offset-six    { margin-left: flex-grid(6) + flex-gutter(); }
+    &.offset-seven  { margin-left: flex-grid(7) + flex-gutter(); }
+    &.offset-eight  { margin-left: flex-grid(8) + flex-gutter(); }
+    &.offset-nine   { margin-left: flex-grid(9) + flex-gutter(); }
+    &.offset-ten    { margin-left: flex-grid(10) + flex-gutter(); }
+    &.offset-eleven { margin-left: flex-grid(11) + flex-gutter(); }
   }
 
-  .one    { width: flex-grid(1); }
-  .two    { width: flex-grid(2); }
-  .three  { width: flex-grid(3); }
-  .four   { width: flex-grid(4); }
-  .five   { width: flex-grid(5); }
-  .six    { width: flex-grid(6); }
-  .seven  { width: flex-grid(7); }
-  .eight  { width: flex-grid(8); }
-  .nine   { width: flex-grid(9); }
-  .ten    { width: flex-grid(10); }
-  .eleven { width: flex-grid(11); }
-  .twelve { width: flex-grid(12); }
-
-  .offset-one    { margin-left: flex-grid(1) + flex-gutter() !important; }
-  .offset-two    { margin-left: flex-grid(2) + flex-gutter() !important; }
-  .offset-three  { margin-left: flex-grid(3) + flex-gutter() !important; }
-  .offset-four   { margin-left: flex-grid(4) + flex-gutter() !important; }
-  .offset-five   { margin-left: flex-grid(5) + flex-gutter() !important; }
-  .offset-six    { margin-left: flex-grid(6) + flex-gutter() !important; }
-  .offset-seven  { margin-left: flex-grid(7) + flex-gutter() !important; }
-  .offset-eight  { margin-left: flex-grid(8) + flex-gutter() !important; }
-  .offset-nine   { margin-left: flex-grid(9) + flex-gutter() !important; }
-  .offset-ten    { margin-left: flex-grid(10) + flex-gutter() !important; }
-  .offset-eleven { margin-left: flex-grid(11) + flex-gutter() !important; }
 }
 
 .visible-phone { display: none; }
@@ -114,20 +115,32 @@ $row-margin-bottom: 20px !default;
       display: block;
       margin-left: 0px;
 
+      &.one    { width: flex-grid(12); }
+      &.two    { width: flex-grid(12); }
+      &.three  { width: flex-grid(12); }
+      &.four   { width: flex-grid(12); }
+      &.five   { width: flex-grid(12); }
+      &.six    { width: flex-grid(12); }
+      &.seven  { width: flex-grid(12); }
+      &.eight  { width: flex-grid(12); }
+      &.nine   { width: flex-grid(12); }
+      &.ten    { width: flex-grid(12); }
+      &.eleven { width: flex-grid(12); }
+      &.twelve { width: flex-grid(12); }
+
+      &.offset-one    { margin-left: 0px; }
+      &.offset-two    { margin-left: 0px; }
+      &.offset-three  { margin-left: 0px; }
+      &.offset-four   { margin-left: 0px; }
+      &.offset-five   { margin-left: 0px; }
+      &.offset-six    { margin-left: 0px; }
+      &.offset-seven  { margin-left: 0px; }
+      &.offset-eight  { margin-left: 0px; }
+      &.offset-nine   { margin-left: 0px; }
+      &.offset-ten    { margin-left: 0px; }
+      &.offset-eleven { margin-left: 0px; }
     }
 
-    .one    { width: flex-grid(12); }
-    .two    { width: flex-grid(12); }
-    .three  { width: flex-grid(12); }
-    .four   { width: flex-grid(12); }
-    .five   { width: flex-grid(12); }
-    .six    { width: flex-grid(12); }
-    .seven  { width: flex-grid(12); }
-    .eight  { width: flex-grid(12); }
-    .nine   { width: flex-grid(12); }
-    .ten    { width: flex-grid(12); }
-    .eleven { width: flex-grid(12); }
-    .twelve { width: flex-grid(12); }
   }
 
   .visible-phone { display: block; }
@@ -150,7 +163,7 @@ $row-margin-bottom: 20px !default;
     .column, .columns {
       float: none;
       display: block;
-      margin-left: 0px;
+      margin-left: 0px !important;
 
     }
 

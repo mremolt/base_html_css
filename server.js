@@ -1,6 +1,5 @@
 var express = require('express'),
-  http = require('http'),
-  sass = require('node-sass');
+  http = require('http');
 
 var app = express();
 

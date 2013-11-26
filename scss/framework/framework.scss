@@ -1,11 +1,12 @@
 @import 'normalize';
-@import 'bourbon/bourbon';
+@import './bourbon/bourbon';
+@import 'mixins';
 
 // variables
 $fg-column: 60px !default;             // Column Width
 $fg-gutter: 25px !default;             // Gutter Width
 $fg-max-columns: 12 !default;          // Total Columns For Main Container
-$row-margin-bottom: 20px !default;
+$row-margin-bottom: 0px !default;
 
 
 /* framework start */
@@ -14,7 +15,6 @@ $row-margin-bottom: 20px !default;
 * {
   @include box-sizing(border-box);
 }
-
 
 // grid
 .container {
@@ -73,6 +73,14 @@ $row-margin-bottom: 20px !default;
 .hidden-phone { display: block; }
 .hidden-tablet { display: block; }
 .hidden-desktop { display: none; }
+
+
+// special classes
+.no-border {                                                                         
+  border: 0px;                                                                       
+}
+
+
 
 
 /* Large desktop */
@@ -189,4 +197,9 @@ $row-margin-bottom: 20px !default;
   .hidden-desktop { display: block; }
 }
 
+
+
+
+
 /* framework end */
+

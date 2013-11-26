@@ -1,8 +1,7 @@
-// variables
-$row-margin-bottom: 10px;
+// override variables
+//$row-margin-bottom: 10px;
 
-@import 'base';
-
+@import 'framework/framework';
 
 // own css
 
@@ -35,18 +34,15 @@ body {
   background-color: #999999;
 }
 
-/* Large desktop */
-@media (min-width: 1200px) {
+// IE overrides
+.lt-ie10 {
 }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+.lt-ie9 {
 }
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+.lt-ie8 {
 }
 
-/* Landscape phones and down */
-@media (max-width: 480px) {
-}
+// Media queries in extra file, it's long enogh as is.
+@import 'media_queries';
